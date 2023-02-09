@@ -1,0 +1,80 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    width: 60vw;
+    height: 100vh;
+    margin: 0px 20vw;
+    -webkit-box-shadow: 0px 0px 25px 5px rgb(0 0 0 / 50%);
+    box-shadow: 0px 0px 25px 5px rgb(0 0 0 / 50%);
+}
+#backgroundImg {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+header {
+    width: 350px;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+}
+section {
+    text-align: center;
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5);
+}
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 100px;
+    margin: 20px 0px 10px 0px;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 10px 2.5px rgb(0 0 0 / 25%);
+    box-shadow: 0px 0px 10px 2.5px rgb(0 0 0 / 25%);
+    transition-duration: 0.25s;
+}
+.button:hover {
+    -webkit-box-shadow: 0px 0px 10px 2.5px rgb(0 0 0 / 10%);
+    box-shadow: 0px 0px 10px 2.5px rgb(0 0 0 / 10%);
+}
+.btnText {
+    width: 100%;
+}
+.btnImg {
+    width: 40px;
+    margin-left: 5px;
+    margin-right: -45px;
+    scale: 0;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.25s;
+}
+section:hover .btnImg {
+    display: block;
+    scale: 1;
+}
+footer {    
+    width: 350px;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+footer h2 {
+    margin-bottom: 0px;
+}
